@@ -53,8 +53,8 @@ class ProjectAgent:
 
     def load(self, path="../vecnormalize_stats2.pkl"):
         # load env params
-        path_env = 'mva-rl-assignment-chris-mrn-1/vecnormalize_stats2.pkl'
-        path_model = 'mva-rl-assignment-chris-mrn-1/ppo_model.zip'
+        path_env = 'mva-rl-assignment-chris-mrn/vecnormalize_stats2.pkl'
+        path_model = 'mva-rl-assignment-chris-mrn/ppo_model.zip'
         env = VecNormalize.load(path_env, self.env)
         # if there is a model, load it
 
@@ -65,7 +65,7 @@ class ProjectAgent:
         self.std = np.sqrt(env.obs_rms.var)
         self.trained = True
 
-    def save(self, path='mva-rl-assignment-chris-mrn-1/vecnormalize_stats2.pkl'):
+    def save(self, path='mva-rl-assignment-chris-mrn/vecnormalize_stats2.pkl'):
         # save env params
         self.env.save(path)
         print("env saved")
