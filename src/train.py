@@ -1,6 +1,6 @@
 from gymnasium.wrappers import TimeLimit
 from env_hiv import HIVPatient
-from stable_baselines3 import PPO
+from sbx import PPO
 from stable_baselines3.common.vec_env import VecNormalize, DummyVecEnv
 from stable_baselines3.common.monitor import Monitor
 import numpy as np
