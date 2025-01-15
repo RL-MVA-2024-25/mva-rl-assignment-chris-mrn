@@ -31,3 +31,4 @@ if __name__ == "__main__":
         score_agent_dr: float = evaluate_HIV_population(agent=agent, nb_episode=20)
         with open(file="score.txt", mode="w") as f:
             f.write(f"{score_agent}\n{score_agent_dr}")
+        
